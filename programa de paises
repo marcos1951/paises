@@ -1,0 +1,33 @@
+<html>
+<head> </head>
+
+<body>
+
+<?php
+$paises= array();
+$paises["MEXICO"]=array("Guadalajara","Nayarit","Monterrey","Leon","Sinaloa");
+$paises["IRAK"]=array("Bagdag","Diyala","Bosora","Ninive","Kirkut");
+$paises["ITALIA"]=array("Roma","Milan","Parma","Livorno","Napoles");
+$paises["EGIPTO"]=array("El Cairo","Luxor","Alejandria","Asuan","Sharm el-Sheij");
+$paises["BRAZIL"]=array("Rio de Janeiro","Bello Horizonte","Orasco","Juazeiro del norte","Manaos");
+$paises["INGLATERRA"]=array("Londres","Manchester","Amsterdam","Newcastell","Liverpool");
+$paises["JAMAICA"]=array("Kingston","Rio Bueno","Port Rollal","Montego Bay","Bomboo");
+$paises["INDIA"]=array("Bombay","Bangalore","Jaipur","Calcuta","Lucknow");
+$paises["AUSTRALIA"]=array("Sidney","Perth","Brisbane","Darwin","Hobart");
+$paises["MARRUECOS"]=array("Rabat","Agadir","Kenitra","Fez","Tetuan");
+
+echo "<ul>";
+foreach($paises as $pais=>$ciudades){
+echo "<li>".$pais."<ul>";
+
+foreach($ciudades as $ciudad){
+echo "<li>".$ciudad."</li>";
+  }
+echo "</ul></li>";
+}
+echo "</ul>";
+
+?>
+
+</body>
+</html>
